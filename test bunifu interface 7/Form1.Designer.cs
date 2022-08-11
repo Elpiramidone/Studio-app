@@ -42,6 +42,7 @@
             this.bunifuTextBox2 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.remember = new Bunifu.UI.WinForms.BunifuCheckBox();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.SuspendLayout();
             // 
             // bunifuTextBox1
@@ -338,11 +339,27 @@
             this.remember.ToolTipText = null;
             this.remember.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs>(this.remember_CheckedChanged);
             // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 27.75F);
+            this.bunifuLabel1.Location = new System.Drawing.Point(197, 74);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(43, 50);
+            this.bunifuLabel1.TabIndex = 4;
+            this.bunifuLabel1.Text = "V2";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(455, 627);
+            this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.remember);
             this.Controls.Add(this.bunifuButton1);
             this.Controls.Add(this.bunifuTextBox2);
@@ -353,6 +370,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -362,6 +380,7 @@
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private Bunifu.UI.WinForms.BunifuCheckBox remember;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
     }
 }
 
